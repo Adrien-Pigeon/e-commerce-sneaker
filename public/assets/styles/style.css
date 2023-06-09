@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 
 :root {
   --orange-color: hsl(26, 100%, 55%);
@@ -9,48 +9,46 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
-
 /* HEADER */
 
 nav {
-    display: flex;
-    align-items: center;
-  
-    margin-top: 2%;
-  }
-  
-  .logo {
-    margin-left: 20%;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-left: 10%;
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: hsl(219, 9%, 45%);
-  }
-  
-  .cart {
-    margin-left: 30%;
-  }
-  
-  .profil {
-    margin-left: 2%;
-  }
-  
-  .profil img {
-    width: 50%;
-    height: auto;
-  }
+  display: flex;
+  align-items: center;
 
-  
+  margin-top: 2%;
+}
+
+.logo {
+  margin-left: 20%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 10%;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: hsl(219, 9%, 45%);
+}
+
+.cart {
+  margin-left: 30%;
+}
+
+.profil {
+  margin-left: 2%;
+}
+
+.profil img {
+  width: 50%;
+  height: auto;
+}
+
 /* BODY */
 
 .wrapper {
@@ -197,3 +195,34 @@ footer {
   font-size: 14px;
   color: #777;
 }
+
+/* FORMULAIRES */
+/*** Inscription ***/
+.form-registration {
+  width: 20%;
+  border: solid 2px --color;
+  margin-left: 15%;
+  margin-top: 1%;
+}
+.form-structure {
+  margin-bottom: 5%;
+  display: block;
+}
+.titre-field {
+  margin-bottom: 1%;
+}
+
+.mdp {
+  margin-top: 5%;
+}
+
+.btn-register {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.register-container h1{
+  margin-left: 15%;
+  margin-top: 5%;
+}
+

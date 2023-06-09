@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>
 			{% block title %}Welcome!
-			{% endblock %}
+			{% endblock %} - Sneakers
 		</title>
 		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>"> {% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}
 
@@ -12,9 +12,9 @@
 		name="viewport" content="width=device-width, initial-scale=1.0">
 
 		{# Feuilles de styles #}
-		{% block stylesheet %}
+		
 			<link rel="stylesheet" href="assets/styles/style.css">
-		{% endblock %}
+		{% block stylesheet %}{% endblock %}
 
 		{% block javascript %}{% endblock %}
 
@@ -23,80 +23,15 @@
 	</head>
 
 	<body>
-		{% block header %}
-			<header>
-				<nav>
-					<div class="logo">
-						<a href="#"><img src="assets/img/logo.svg" alt="logo"/></a>
-					</div>
-					<ul class="nav-links">
-						<li>
-							<a href="#">Accueil</a>
-						</li>
-						<li>
-							<a href="#">Marque</a>
-						</li>
-						<li>
-							<a href="#">Collections
-							</a>
-						</li>
-						<li>
-							<a href="#">Contact</a>
-						</li>
-					</ul>
-					<div class="cart">
-						<a href=""><img src="assets/img/icon-cart.svg" alt="Cart"/></a>
-					</div>
-					<div class="profil">
-						<a href=""><img src="assets/img/image-avatar.png" alt="Avatar"/></a>
-					</div>
-				</nav>
-			</header>
-		{% endblock %}
+
+		{% include "_partials/_nav.html.twig" %}
+
 
 		{% block body %}{% endblock %}
 
 
-		{% block footer %}
+		{% include "_partials/_footer.html.twig" %}
 
-        <footer>
-  <div class="footer-container">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>A propos</h3>
-         <ul>
-          <li><a href="#">Mentions légales</a></li>
-          <li><a href="#">RGPD</a></li>
-          <li><a href="#">Cookies</a></li>
-          
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Liens rapides</h3>
-        <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Marque</a></li>
-          <li><a href="#">Collections</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Contactez-nous</h3>
-        <p>Adresse : 121 Rue du de la Vendée, 49300 Cholet</p>
-        <p>Email : adrien.pigeon98@gmail.com</p>
-        <p>Téléphone : 06 16 09 19 34</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2023 Sneakers - Tous droits réservés</p>
-    </div>
-  </div>
-</footer>
-
-
-        
-        
-        {% endblock %}
 
 	</body>
 </html>
