@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+:root {
+    --orange-color: hsl(26, 100%, 55%);
+    --pale-orange-color: hsl(25, 100%, 94%);
+  }
+
+/* HEADER */
+
+nav {
+    display: flex;
+    align-items: center;
+  
+    margin-top: 2%;
+  }
+  
+  .logo {
+    margin-left: 20%;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 10%;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+  }
+  
+ 
+
+  /* NAV COMPTE */
+  .nav-compte{
+    list-style: none;
+    display: flex;
+    margin-left: 20%;
+  }
+
+  .nav-compte li{
+    margin-left: 10%;
+  }
+  
+  .nav-compte li a{
+    text-decoration: none;
+    
+  }
+
+  .cart {
+    margin-left: 2%;
+  }
+  
+  .profil {
+    margin-left: 2%;
+  }
+  
+  .profil img {
+    width: 50%;
+    height: auto;
+  }

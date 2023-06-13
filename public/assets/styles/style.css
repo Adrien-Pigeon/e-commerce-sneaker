@@ -9,47 +9,8 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
-/* HEADER */
-
-nav {
-  display: flex;
-  align-items: center;
-
-  margin-top: 2%;
-}
-
-.logo {
-  margin-left: 20%;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin-left: 10%;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: hsl(219, 9%, 45%);
-}
-
-.cart {
-  margin-left: 30%;
-}
-
-.profil {
-  margin-left: 2%;
-}
-
-.profil img {
-  width: 50%;
-  height: auto;
-}
-
-/* BODY */
+/*** ACCUEIL ***/
+/* body */
 
 .wrapper {
   display: flex;
@@ -92,7 +53,7 @@ nav {
   text-decoration: line-through;
 }
 
-/* BOUTONS PRICE */
+/* boutons price */
 
 .offset {
   box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
@@ -126,12 +87,12 @@ button:focus {
   padding: 1em 2em;
 }
 
-/* SECTION */
+/* section */
 section.active {
   background-color: #f0f0f0;
 }
 
-/* PANIER */
+/* panier */
 .item-count {
   background-color: red;
   color: white;
@@ -140,61 +101,6 @@ section.active {
   border-radius: 50%;
 }
 
-/* FOOTER */
-footer {
-  background-color: #f5f5f5;
-  padding: 20px 0;
-}
-
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-section {
-  flex: 1;
-  margin-right: 20px;
-}
-
-.footer-section h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.footer-section p {
-  margin-bottom: 15px;
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 5px;
-}
-
-.footer-section ul li a {
-  color: #333;
-  text-decoration: none;
-}
-
-.footer-bottom {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.footer-bottom p {
-  font-size: 14px;
-  color: #777;
-}
 
 /* FORMULAIRES */
 /*** Inscription ***/
@@ -226,3 +132,15 @@ footer {
   margin-top: 5%;
 }
 
+/*** MARQUE ***/
+/* body */
+.wrapper_marque{
+  display: inline-flex;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.wrapper_marque img{
+  width: 500%;
+}

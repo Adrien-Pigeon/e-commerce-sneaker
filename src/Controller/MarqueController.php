@@ -11,7 +11,8 @@ class MarqueController extends AbstractController
     #[Route('/marque', name: 'app_marque')]
     public function index(): Response
     {
-        return $this->render('marque/index.html.twig', [
+
+        return $this->render('main/marque.html.twig', [
             'controller_name' => 'MarqueController',
         ]);
     }
