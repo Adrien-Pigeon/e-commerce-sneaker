@@ -18,17 +18,30 @@
 				<a href="#">Contact</a>
 			</li>
 		</ul>
-	
 
-			<div class="nav-compte">
+
+		<div class="nav-compte">
+			{% if app.user %}
+
 				<li>
 					<a href="#">Mon compte</a>
 				</li>
 				<li>
-					<a href="#">Déconnexion</a>
+					<a href="{{ path('app_logout')}}">Déconnexion</a>
 				</li>
-			</div>
-		
+
+			{% else %}
+
+				<li>
+					<a href="{{ path('app_register')}}">Inscription</a>
+				</li>
+				<li>
+					<a href="{{ path('app_login')}}">Connexion</a>
+				</li>
+
+			{% endif %}
+
+		</div>
 
 
 		<div class="cart">
@@ -37,6 +50,6 @@
 		<div class="profil">
 			<a href=""><img src="assets/img/image-avatar.png" alt="Avatar"/></a>
 		</div>
-		
+
 	</nav>
 </header>
