@@ -11,14 +11,14 @@ class Images
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
-    private ?int $id = null;
+    private ?int $id;
 
     #[ORM\Column(length: 255)]
-    private ?string $name = null;
+    private ?string $name;
 
     #[ORM\ManyToOne(inversedBy: 'images')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?Products $products = null;
+    private ?Products $products;
 
     public function getId(): ?int
     {
