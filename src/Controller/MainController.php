@@ -16,4 +16,13 @@ class MainController extends AbstractController
         ]);
     }
 
+    #[Route('/marque', name: 'app_marque')]
+    public function marque(): Response
+    {
+
+        return $this->render('main/marque.html.twig', [
+            'controller_name' => 'MarqueController',
+        ]);
+    }
+
 }

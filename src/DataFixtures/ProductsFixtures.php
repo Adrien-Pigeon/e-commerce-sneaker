@@ -13,8 +13,9 @@ class ProductsFixtures extends Fixture
 
     public function __construct(private SluggerInterface $slugger)
     {
-    }
 
+    }
+    
     public function load(ObjectManager $manager): void
     {
         $faker = Faker\Factory::create('fr_FR');
