@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listes "{{ category.name }}"
+{% endblock %}
+
+{% block body %}
+
+	<h1>Liste des produits de la catégorie "{{ category.name }}"</h1>
+
+
+	{# On boucle sur les produits #}
+	{% for product in category.products %}
+		<div>
+			<h2>{{ product.name }}</h2>
+            <p>{{ product.description }}</p>
+            <a href="#">Voir les détails</a>
+		</div>
+
+	{% endfor %}
+
+
+{% endblock %}

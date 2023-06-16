@@ -1,0 +1,8 @@
+.category a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.title-category{
+    display: flex;
+}

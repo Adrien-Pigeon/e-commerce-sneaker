@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Collections
+{% endblock %}
+{% block stylesheet %}
+	<link rel="stylesheet" href="{{ asset('assets/styles/collections.css')}}">
+	<link href="{{ asset('assets/styles/nav.css') }}" rel="stylesheet"/>
+	<link href="{{ asset('assets/styles/footer.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block body %}
+
+	<h1>Collections</h1>
+
+
+	<div
+		class="flex">
+
+		{# Boucle sur les catégories et les affichent #}
+		{% for category in categories %}
+			{% if category.parent == null %}
+				<div class="title-category">
+					<h2>{{ category.name }}</h2>
+				</div>
+
+			{% else %}
+				<div class="category">
+					<ul>
+						<li>
+							<a href="{{path('app_categories_list', {slug: category.slug}) }}">{{ category.name}}</a>
+						</li>
+					</ul>
+
+		
+				</div>
+			{% endif %}
+
+
+		{% endfor %}
+	</div>
+
+	<div></div>
+
+{% endblock %}
