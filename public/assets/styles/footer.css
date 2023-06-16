@@ -30,6 +30,7 @@ footer {
   .footer-section h3 {
     font-size: 18px;
     margin-bottom: 10px;
+    font-weight: 900;
   }
   
   .footer-section p {
@@ -49,6 +50,12 @@ footer {
   .footer-section ul li a {
     color: #333;
     text-decoration: none;
+    font-weight: 600;
+  }
+
+  .footer-section a:hover{
+    color: var(--orange-color);
+    transition: ease 300ms;
   }
   
   .footer-bottom {

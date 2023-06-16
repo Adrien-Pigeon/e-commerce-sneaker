@@ -16,6 +16,7 @@ class CategoriesFixtures extends Fixture
     {
     }
 
+    // Catégories qui vont etre chargé en BDD
     public function load(ObjectManager $manager): void
     {
         $parent = $this->createCategory('Basses', null, $manager);
@@ -25,9 +26,17 @@ class CategoriesFixtures extends Fixture
         $this->createCategory('Tongs', $parent, $manager);
         $this->createCategory('Converses', $parent, $manager);
 
+        $parent = $this->createCategory('Hautes', null, $manager);
+
+
+        $this->createCategory('Sécurités', $parent, $manager);
+        $this->createCategory('Docks', $parent, $manager);
+        $this->createCategory('Talons', $parent, $manager);
     
         $manager->flush();
     }
+
+    
 
     public function createCategory(
         string $name,

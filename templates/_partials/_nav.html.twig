@@ -1,17 +1,14 @@
 <header>
 	<nav>
 		<div class="logo">
-			<a href="/"><img src="assets/img/logo.svg" alt="logo"/></a>
+			<a href="{{ path('app_main_')}}"><img src="{{ asset('assets/img/logo.svg') }}" alt="logo"/></a>
 		</div>
 		<ul class="nav-links">
 			<li>
-				<a href="/">Accueil</a>
+				<a href="{{ path('marque')}}">Marque</a>
 			</li>
 			<li>
-				<a href="/marque">Marque</a>
-			</li>
-			<li>
-				<a href="#">Collections
+				<a href="{{ path('collections')}}">Collections
 				</a>
 			</li>
 			<li>
@@ -45,10 +42,10 @@
 
 
 		<div class="cart">
-			<a href=""><img src="assets/img/icon-cart.svg" alt="Cart"/></a>
+			<a href=""><img src="{{ asset('assets/img/icon-cart.svg') }}" alt="Cart"/></a>
 		</div>
 		<div class="profil">
-			<a href=""><img src="assets/img/image-avatar.png" alt="Avatar"/></a>
+			<a href=""><img src="{{ asset('assets/img/image-avatar.png') }}" alt="Avatar"/></a>
 		</div>
 
 	</nav>
