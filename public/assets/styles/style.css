@@ -81,7 +81,6 @@ button:focus {
 .buttonsall button {
   background: none;
   border: 2px solid;
-  font: inherit;
   line-height: 1;
   margin: 0.5em;
   padding: 1em 2em;
@@ -100,7 +99,6 @@ section.active {
   padding: 2px 5px;
   border-radius: 50%;
 }
-
 
 /* FORMULAIRES */
 /*** Inscription ***/
@@ -127,32 +125,28 @@ section.active {
   margin-bottom: 10%;
 }
 
-.register-container h1{
+.register-container h1 {
   margin-left: 15%;
   margin-top: 5%;
 }
 
 /*** MARQUE ***/
 /* body */
-.title-marque{
+.title-marque {
   margin-top: 10%;
   margin-left: 5%;
 }
-.wrapper_marque{
+.wrapper_marque {
   display: inline-block;
   margin-left: 5%;
   margin-bottom: 10%;
-  
 }
 
 .wrapper_marque p {
-  
   font-size: 18px;
   font-weight: 500;
 }
 
 .wrapper_marque img {
   width: 120%;
- 
 }
-

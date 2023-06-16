@@ -30,8 +30,13 @@ nav {
   .nav-links li a {
     text-decoration: none;
     color: hsl(219, 9%, 45%);
+    font-weight: 900;
   }
   
+  .nav-links a:hover{
+    color: var(--orange-color);
+    transition: ease 300ms;
+  }
  
 
   /* NAV COMPTE */
@@ -42,12 +47,18 @@ nav {
   }
 
   .nav-compte li{
-    margin-left: 10%;
+    margin-left: 5%;
   }
   
   .nav-compte li a{
     text-decoration: none;
-    
+    color: hsl(219, 9%, 45%);
+    font-weight: 900;
+  }
+
+  .nav-compte a:hover{
+    color: var(--orange-color);
+    transition: ease 300ms;
   }
 
   .cart {

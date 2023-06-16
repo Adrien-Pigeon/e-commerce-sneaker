@@ -1,0 +1,55 @@
+@media screen and (max-width: 1000px) {
+  /* NAVIGATION */
+  .logo {
+    margin-left: 5%;
+  }
+  .nav-links {
+    margin-left: 0%;
+  }
+  .nav-compte {
+    margin-left: 10%;
+  }
+  .cart {
+    margin-left: 5%;
+  }
+
+  /* FOOTER */
+  .footer-section {
+    flex: 1;
+    margin-right: -20px;
+  }
+
+  /* ACCUEIL */
+  /* BODY */
+  .sneaker-left img {
+    width: 70%;
+    margin-left: 20%;
+  }
+  .sneaker-right img {
+    width: 85%;
+    margin-left: 10%;
+  }
+
+  /* MARQUE */
+  .wrapper_marque p {
+    font-size: 17px;
+  }
+
+  /* COLLECTIONS */
+  .title-category {
+    width: 80%;
+  }
+  .flex {
+    margin-left: 0%;
+  }
+
+  .flex2 {
+    grid-row: 2/5;
+  }
+  .flex2 img {
+    width: 200%;
+  }
+  .category li {
+    margin-bottom: 0%;
+  }
+}
