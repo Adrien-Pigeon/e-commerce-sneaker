@@ -26,6 +26,20 @@
 
 		{% include "_partials/_nav.html.twig" %}
 
+{# <pre>
+    {{ dump(app.user) }}
+</pre> #}
+			{% if app.user and app.user.isVerified == false %}
+
+			<div>
+				<button type="button">NIQUE TA MERE MARTIN</button>
+				<div>
+				<strong>Votre compte n'est pas activé</strong>, renvoyer le lien d'activation
+				</div>
+			</div>
+
+			{% endif %}
+
 
 		{% block body %}{% endblock %}
 
