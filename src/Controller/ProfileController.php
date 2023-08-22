@@ -14,7 +14,7 @@ class ProfileController extends AbstractController
     {
         return $this->render('profile/index.html.twig', [
             'controller_name' => 'Profil de l\'utilisateur',
-        ]);
+        ]); 
     }
 
     #[Route('/commandes', name: 'orders')]
