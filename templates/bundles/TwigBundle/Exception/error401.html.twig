@@ -1,0 +1,11 @@
+{% block body %}
+<link rel="stylesheet" href="{{asset('assets/styles/error.css')}}">
+
+<div class="container">
+
+<h1>Désolé, Vous n'avez pas l'autorisation nécessaire pour accéder à cette page</h1>
+<h2>Erreur 401</h2> <br>
+<a class="lien" href="{{ path('app_main_') }}">Retour à l'accueil</a>
+</div>
+
+{% endblock %}

@@ -55,7 +55,7 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
     private ?bool $is_verified = false;
 
     #[ORM\Column(length: 100)]
-    private ?string $resetToken;
+    private ?string $resetToken = null;
 
 
     #[ORM\OneToMany(mappedBy: 'users', targetEntity: Orders::class)]

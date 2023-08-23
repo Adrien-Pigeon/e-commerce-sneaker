@@ -1,0 +1,18 @@
+.container {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    
+  }
+  
+  h1,h2{
+    font-size: 60px;
+    color: black;
+    margin: 0;
+  }
+  
+ .lien{
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+ }
