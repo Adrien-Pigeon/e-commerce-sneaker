@@ -1,8 +1,9 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Connexion{% endblock %}
-
+    
 {% block body %}
+    
 <form method="post">
     {% if error %}
         <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
@@ -38,5 +39,6 @@
     <button class="btn btn-lg btn-primary" type="submit">
         Connexion
     </button>
+    <a href="{{ path("forgotten_password")}}">Mot de passe oublié</a>
 </form>
 {% endblock %}

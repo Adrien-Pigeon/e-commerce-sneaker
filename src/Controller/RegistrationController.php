@@ -150,7 +150,7 @@ class RegistrationController extends AbstractController
             
             // On envoi un mail
             $mail->send(
-                'no-reply@sneakers-commerce.net',
+                'no-reply@sneakers-ecommerce.fr',
                 $user->getEmail(),
                 'Activation de votre compte sur le site Sneakers',
                 'register',
