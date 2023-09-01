@@ -1,4 +1,4 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   /* NAVIGATION */
   .logo {
     margin-left: 5%;
@@ -52,4 +52,67 @@
   .category li {
     margin-bottom: 0%;
   }
+}
+
+@media screen and (max-width: 912px) {
+
+  /*** ACCUEIL ***/
+/* body */
+.sneaker {
+  display: block;
+}
+
+.wrapper {
+  display: block;
+}
+
+.container-product {
+  margin-left: 0%;
+  margin-bottom: 10%;
+  font-size: 40px;
+}
+
+.product{
+  font-size: 40px;
+}
+
+.sneaker-left img {
+  width: 70%;
+  border-radius: 5%;
+  margin: 0;
+} 
+
+.sneaker-right img {
+  width: 70%;
+  border-radius: 5%;
+  margin: 0;
+} 
+
+.product h3 {
+  color: var(--orange-color);
+  
+}
+
+.product p {
+  color: hsl(219, 9%, 45%);
+  
+}
+
+.price {
+  font-weight: 900;
+  font-size: 30px;
+}
+.price-before {
+  text-decoration: line-through;
+  font-size: 30px;
+}
+
+.buttonsall button {
+  background: none;
+  border: 2px solid;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  font-size: 30px;
+}
 }

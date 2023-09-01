@@ -21,37 +21,37 @@ class RegistrationFormType extends AbstractType
         $builder
             ->add('email', EmailType::class, [
                 'attr' => [
-                    'class' => 'form-structure'
+                    'class' => 'form-structure, form-control'
                 ],
                 'label' => 'E-mail'
             ])
             ->add('lastname', TextType::class, [
                 'attr' => [
-                    'class' => 'form-structure'
+                    'class' => 'form-structure, form-control'
                 ],
                 'label' => 'Nom'
             ])
             ->add('firstname', TextType::class, [
                 'attr' => [
-                    'class' => 'form-structure'
+                    'class' => 'form-structure, form-control'
                 ],
                 'label' => 'Prénom'
             ])
             ->add('address', TextType::class, [
                 'attr' => [
-                    'class' => 'form-structure'
+                    'class' => 'form-structure, form-control'
                 ],
                 'label' => 'Adresse'
             ])
             ->add('zipcode', TextType::class, [
                 'attr' => [
-                    'class' => 'form-structure'
+                    'class' => 'form-structure, form-control'
                 ],
                 'label' => 'Code postal'
             ])
             ->add('city', TextType::class, [
                 'attr' => [
-                    'class' => 'form-structure'
+                    'class' => 'form-structure, form-control'
                 ],
                 'label' => 'Ville'
             ])
@@ -70,7 +70,7 @@ class RegistrationFormType extends AbstractType
                 'mapped' => false,
                 'attr' => [
                     'autocomplete' => 'new-password',
-                    'class' => 'form-structure'
+                    'class' => 'form-structure, form-control'
                 ],
                 'label' => 'Mot de passe',
                 'constraints' => [

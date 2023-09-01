@@ -113,7 +113,8 @@ section.active {
   display: block;
 }
 .titre-field {
-  margin-bottom: 1%;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .mdp {
