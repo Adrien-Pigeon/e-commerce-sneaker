@@ -17,9 +17,10 @@
 		{% for product in products.data %}
 			<div class="col-3 mb-3">
 				<article class="card h-100">
+					<img src="{{ asset('assets/img/products/mini/300x300-' ~ product.images[0].name ) }}" class="card-img-top" alt="{{ product.name }}">
 					<div class="card-body">
-						<h2 class="card-text">{{ product.name }}</h2>
-						<p>{{ product.description }}</p>
+						<h2 class="card-title">{{ product.name }}</h2>
+						<p class="card-text">{{ product.description }}</p>
 						<a href="{{ path('app_products_details', {"slug": product.slug }) }}" class="btn btn-primary">Voir les détails</a>
 					</div>
 				</article>	

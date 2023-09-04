@@ -31,7 +31,7 @@
 						{% for image in product.images %}
                             <!-- Si mon loop.index égale a 0 alors je met "active" sinon je met rien -->
 							<div class="carousel-item {{ (loop.first) ? 'active' : '' }}"> 
-								<img src="{{ asset('assets/img/') ~ image.name }}" class="d-block w-100" alt="{{ product.name }}">
+								<img src="{{ asset('assets/img/products/mini/300x300-') ~ image.name }}" class="d-block w-100" alt="{{ product.name }}">
                             </div>
 						{% endfor %}
 					</div>
