@@ -1,0 +1,22 @@
+
+/*** MARQUE ***/
+/* body */
+.title-marque {
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+  .wrapper_marque {
+    display: inline-block;
+    margin-left: 5%;
+    margin-bottom: 10%;
+  }
+  
+  .wrapper_marque p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .wrapper_marque img {
+    width: 120%;
+  }
+  

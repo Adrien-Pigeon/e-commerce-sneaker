@@ -1,0 +1,38 @@
+/*** ACCUEIL ***/
+/* body */
+
+.wrapper {
+    display: flex;
+    margin-top: 10%;
+  }
+  
+  .sneaker {
+    display: flex;
+  }
+  
+  .sneaker-left img {
+    width: 50%;
+    border-radius: 5%;
+    margin-left: 40%;
+  }
+  
+  .sneaker-right img {
+    width: 50%;
+    border-radius: 5%;
+    margin-left: 10%;
+  }
+  
+  .container-product {
+    margin-left: 20%;
+    margin-bottom: 10%;
+  }
+  
+  .product h3 {
+    color: var(--orange-color);
+  }
+  
+  .product p {
+    color: hsl(219, 9%, 45%);
+  }
+  
+  
