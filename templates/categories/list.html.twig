@@ -5,6 +5,7 @@
 
 {% block body %}
 	<link href="{{ asset('assets/styles/product.css') }}" rel="stylesheet"/>
+	
 
 	<main class="container page-style">
 		<section class="row">
@@ -20,9 +21,10 @@
 						<img src="{{ asset('assets/img/products/mini/300x300-' ~ product.images[0].name ) }}" class="card-img-top" alt="{{ product.name }}">
 						<div class="card-body">
 							<h2 class="card-title">{{ product.name }}</h2>
-							<p class="card-text price">{{ product.price / 100}}
-								$</p>
-							<a href="{{ path('app_products_details', {"slug": product.slug }) }}" class="btn btn-primary">Voir les détails</a>
+							<p class="card-text price">{{ product.price / 100}} $</p>
+							<div class="buttonsall">
+							<a href="{{ path('app_products_details', {"slug": product.slug }) }}" class="offset">Voir les détails</a>
+							</div>
 						</div>
 					</article>
 				</div>

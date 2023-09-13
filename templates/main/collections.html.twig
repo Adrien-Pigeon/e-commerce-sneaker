@@ -2,48 +2,47 @@
 
 {% block title %}Collections
 {% endblock %}
-{% block stylesheet %}
-	<link rel="stylesheet" href="{{ asset('assets/styles/collections.css')}}">
-	<link href="{{ asset('assets/styles/nav.css') }}" rel="stylesheet"/>
-	<link href="{{ asset('assets/styles/footer.css') }}" rel="stylesheet"/>
-	<link href="{{ asset('assets/styles/responsive.css') }}" rel="stylesheet"/>
-{% endblock %}
+
 
 {% block body %}
+	<link href="{{ asset('assets/styles/collections.css')}}" rel="stylesheet">
 
-	<section class="wrapper">
+	<main class="container">
+		<section class="row">
 
-		<div class="title-collection">
-			<h1>Collections</h1>
-		</div>
-
-
-		<div class="flex">
-
-			{# Boucle sur les catégories et les affichent #}
-			{% for category in categories %}
-				{% if category.parent == null %}
-					<div class="title-category">
-						<h2> Gamme {{ category.name }}</h2>
-					</div>
-
-				{% else %}
-					<div class="category">
-						<ul>
-							<li><a href="{{path('app_categories_list',{slug:category.slug})}}">{{ category.name}}</a></li>
-						</ul>
+			<div class="col-12 mt-5 mb-5">
+				<h1>Collections</h1>
+			</div>
 
 
-					</div>
-				{% endif %}
+			<div class="col-6 flex mt-5">
+
+				{# Boucle sur les catégories et les affichent #}
+				{% for category in categories %}
+					{% if category.parent == null %}
+						<div class="title-category">
+							<h2>
+								Gamme {{ category.name }}</h2>
+						</div>
+
+					{% else %}
+						<div class="category">
+							<ul>
+								<li><a href="{{path('app_categories_list',{slug:category.slug})}}">{{ category.name}}</a></li>
+							</ul>
 
 
-			{% endfor %}
-		</div>
+						</div>
+					{% endif %}
 
 
-		<div class="flex2">
-			<img src="{{asset('assets/img/img-collections.png') }}" alt="image collections">
-		</div>
-	</section>
+				{% endfor %}
+			</div>
+
+
+			<div class="col-6 flex2">
+				<img src="{{asset('assets/img/img-collections.png') }}" alt="image collections">
+			</div>
+		</section>
+	</main>
 {% endblock %}

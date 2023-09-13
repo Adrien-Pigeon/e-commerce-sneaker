@@ -1,14 +1,9 @@
 
 /*** MARQUE ***/
 /* body */
-.title-marque {
-    margin-top: 10%;
-    margin-left: 5%;
-  }
+
   .wrapper_marque {
-    display: inline-block;
-    margin-left: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 100px;
   }
   
   .wrapper_marque p {
@@ -17,6 +12,6 @@
   }
   
   .wrapper_marque img {
-    width: 120%;
+    width: 100%;
   }
   
